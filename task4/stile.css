@@ -1,0 +1,16 @@
+body {
+    padding: 16px;
+    background-color: lightgray;
+}
+
+a {
+    padding: 16px;
+    border: 3px solid darkmagenta;
+    text-decoration: none;
+    border-radius: 8px;
+    background-color: lightcyan;
+}
+
+a:active {
+    background-color: cyan;
+}
