@@ -1,0 +1,32 @@
+
+ul {
+    width: 250px;
+    margin: 0 auto;
+    padding: 0;
+    text-align: center;
+    border: 3px solid black;
+    border-radius: 8px;
+    background-color: lightgrey;
+}
+
+ul > li {
+    cursor: pointer;
+    margin: 8px auto;
+    padding: 8px;
+    list-style: none;
+}
+
+ul > li:hover {
+    background-color: lightcyan;
+}
+
+
+ul > li:active {
+    background-color: cyan;
+}
+
+ul > li > a {
+    text-decoration: none;
+    color: blueviolet;
+    font-size: 2rem;
+}
