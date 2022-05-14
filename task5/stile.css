@@ -1,0 +1,45 @@
+form {
+    width: 450px;
+    margin: 0 auto;
+    padding: 16px;
+    background-color: lightgray;
+    border: 3px solid darkblue;
+    border-radius: 8px;
+}
+
+form > input[type="text"] {
+    box-sizing: border-box;
+    width: 100%;
+    margin: 8px 0;
+    padding: 16px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-radius: 8px;
+}
+
+form > p {
+    min-height: 150px;
+    margin: 8px 0;
+    padding: 16px;
+    border-radius: 8px;
+    background-color: white;
+}
+
+form > input[type="submit"] {
+    display: block;
+    margin: 16px auto 0 auto;
+    padding: 16px;
+    border-radius: 8px;
+    color: lightcoral;
+    background-color: lightcyan;
+}
+
+form > input[type="submit"]:hover {
+    cursor: pointer;
+}
+
+form > input[type="submit"]:active {
+    color: coral;
+    background-color: cyan;
+}
