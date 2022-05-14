@@ -1,18 +1,34 @@
+// зададим базовые цвета.
 const colors = ['green','yellow','red'];
-let currentColorNumber = 2;
 
-const circle = document.querySelector('div');
+// Получим элемент Body
+const elementRoot = document.querySelector('body');
 
-const changeColor = () => {
-    if (currentColorNumber === 2) {
-        currentColorNumber = 0;
-    } else {
-        currentColorNumber++;
-    }
-    circle.style.backgroundColor = colors[currentColorNumber];
+// Сотрем текущий контент в Body.
+elementRoot.innerHTML = '';
+
+// По приколу, создадим три дива.
+// Каждый див по умолчанию отображается как круд с черной заливкой.
+for (let i = 0; i < 3; i++) {
+    elementRoot.append(document.createElement('div'));
+}
+
+// Получим все доступные дивы на странице.
+const circles = document.querySelectorAll('div');
+
+// Метод который меняет цвет окружностей, по индексу.
+const changeColor = (colorIndex) => {
+    circles.forEach((element, index) => {
+        element.style.backgroundColor = index !== colorIndex ? 'black' : colors[colorIndex];
+    });
 };
 
-circle.addEventListener('click', changeColor);
+circles.forEach((element, index) => {
+    element.addEventListener('click', () => { changeColor(index) });
+});
+
+
+
 
 
 // // Решение задачи по учебнику.
